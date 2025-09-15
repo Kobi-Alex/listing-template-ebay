@@ -27,7 +27,7 @@ h1,h2,h3 {
 }
 
 p {
-    color: #7e8286;
+    color: #787878;
 }
 
 
@@ -39,7 +39,7 @@ hr {
     grid-column: 1/4;
     padding: 0;
     width: 100%;
-    background-image:linear-gradient(to right, #ffffff00, #8ac6ffe7, #ffffff00);
+    background-image:linear-gradient(to right, #8ac6ff1e, #8ac6ffe7, #8ac6ff1e);
 }
 
 .cpcm_grid-container {
@@ -107,7 +107,7 @@ nav li a:hover {
 main {
     grid-column: span 3;
     display: grid;
-    grid-template-columns: 1fr 1fr 1.6fr;
+    grid-template-columns: 1fr 1fr 1.3fr;
     align-items: center;
     justify-items: center;
     gap: 30px 50px;
@@ -136,35 +136,40 @@ main {
     justify-content: space-between;
     height: 480px;
 
-    font-family: 'Outfit', sans-serif;
+    /* font-family: 'Outfit', sans-serif; */
 }
 
 
 .part-description-header h1 {
     color: #000000;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 1.1;
     font-weight: 600;
 
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
+.part-description-header > p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 450
+}
 
 .part-description-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px 80px;  
+    gap: 10px 100px;  
 }
 
 .part-description-content p {
-    line-height: 1.6;
+    line-height: 1.5;
     font-size: 11px;
+    font-weight: 450;
     text-transform: uppercase;
 }
 
 .part-description-content h2 {
-    color: #333333;
-    font-weight: 450;
+    font-weight: 460;
     font-size: 19px;
     text-transform: capitalize;
 }
@@ -207,7 +212,7 @@ main {
     /* border: solid 2px #0aa7f6; */
     background-color: #ffffff;
     /* color: #0093e8; */
-    color: #0074c7
+    color: #0a74f6
 }
 
 .cpcm_term-conditions{
