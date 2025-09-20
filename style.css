@@ -27,14 +27,13 @@ h1,h2,h3 {
 }
 
 p {
-    color: #787878;
+    color: #3e3e3e;
 }
 
 
 hr {
     height: 1px;
     border: 0;
-    /* border-top: 1.5px solid #acdaff; */
     margin: 1em 0;
     grid-column: 1/4;
     padding: 0;
@@ -45,7 +44,6 @@ hr {
 .cpcm_grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* gap: 60px; */
     max-width: 1200px;
     margin: 0px auto;
 }
@@ -129,7 +127,6 @@ main {
 .part-description {    
     
     grid-column: 3;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -142,7 +139,6 @@ main {
     font-size: 32px;
     line-height: 1.1;
     font-weight: 600;
-
     margin-bottom: 14px;
 }
 
@@ -229,7 +225,7 @@ main {
 
 .part-fitment-content > ul {
 
-    color: #787878;
+    color: #3e3e3e;
 
     font-size: 14px;
     letter-spacing: 0px;
@@ -263,9 +259,6 @@ li::marker {
 
 
 .cpcm_term-conditions p{
-    
-    color: #787878;
-
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 28px;
@@ -350,4 +343,29 @@ li::marker {
     color: #bcbcbc;
     font-weight: 400;
     font-family: "Nunito Sans";
+}
+
+
+/* responsive */
+@media screen and (max-width: 980px) {
+    .cpcm_part-image {
+        grid-column: 1/4;
+    }
+
+    .part-description {    
+        grid-column: 1/4;
+        padding-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .cpcm_part-image {
+        display: block;
+    }
+
+    .part-description {    
+        display: block;
+    }
+
 }
