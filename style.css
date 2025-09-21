@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-body{
+.cpcm_body{
     /* margin: 20px; */
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'Outfit', sans-serif; */
@@ -20,6 +20,8 @@ ul, li {
     padding: 0;
     list-style-type: none;
     list-style: none;
+
+    color: #787878;
 }
 
 h1,h2,h3 {
@@ -27,9 +29,9 @@ h1,h2,h3 {
 }
 
 p {
-    color: #3e3e3e;
+    /* color: #787878; */
+    color: #707070;
 }
-
 
 hr {
     height: 1px;
@@ -70,15 +72,15 @@ nav {
     padding: 0px 40px;
 }
 
-.logo {
+.cpcm_company-logo {
     background: transparent;
 }
 
-.menu {
+.cpcm_menu {
     grid-column: 3;
 }
 
-.menu-content {
+.cpcm_menu-content {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -121,65 +123,64 @@ main {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  aspect-ratio: 4 / 3;
+  /* aspect-ratio: 4 / 3; */
 }
 
-.part-description {    
-    
+.cpcm_part-description {    
     grid-column: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 500px;
+    height: 520px;
 }
 
-
-.part-description-header h1 {
+.cpcm_part-description-header h1 {
     color: #000000;
     font-size: 32px;
     line-height: 1.1;
     font-weight: 600;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
-.part-description-header > p {
+.cpcm_part-description-header > p {
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 24px;
     font-weight: 400;
+    text-align: justify;
 }
 
-.part-description-content {
+.cpcm_part-description-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px 68px;  
+    gap: 12px 72px;  
 }
 
-.part-description-content p {
+.cpcm_part-description-content p {
     line-height: 1.5;
     font-size: 11px;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.part-description-content h2 {
+.cpcm_part-description-content h2 {
     font-weight: 460;
     font-size: 19px;
     text-transform: capitalize;
 }
 
 .cpcm_description-barcode{
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
-.ean-barcode {
+.cpcm_ean-partStock-barcode {
     font-family: 'Libre Barcode 39 Extended Text';
-    font-size: 40px;
+    font-size: 43px;
     color: #494949;
     align-self: center;
 }
 
-.button-home{
+.cpcm_eBay-button-partsByVehicleStock{
     display: block;
     position: relative;
     height: 46px;
@@ -187,7 +188,7 @@ main {
     /* background-color: #0aa7f6; */
     background-color: #0a74f6;
     /* background-color: #35aef4; */
-    border-radius: 5px;
+    border-radius: 8px;
     color: #ffffff;
 
     font-size: 12px;
@@ -201,7 +202,7 @@ main {
     align-self:flex-start;
 }
 
-.button-home:hover{
+.cpcm_eBay-button-partsByVehicleStock:hover{
     border: solid 2px #0a74f6;
     /* border: solid 2px #0aa7f6; */
     background-color: #ffffff;
@@ -209,12 +210,13 @@ main {
     color: #0a74f6
 }
 
-.part-fitment-content {
+/* FITMENT */
+.cpcm_part-fitment-container {
     grid-column: span 3;
     width: 100%;
 }
 
-.part-fitment-content > h1 {
+.cpcm_part-fitment-content > h1 {
     color: #1b1b1b;
     font-size: 24px;
     letter-spacing: 0.4px;
@@ -223,17 +225,14 @@ main {
     text-transform: capitalize;
 }
 
-.part-fitment-content > ul {
-
-    color: #3e3e3e;
-
+.cpcm_part-fitment-content > ul {
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 24px;
     font-weight: 400;
 }
 
-.part-fitment-content li{
+.cpcm_part-fitment-content li{
     list-style: inside;
     list-style-type:disc;
 }
@@ -243,12 +242,12 @@ li::marker {
 }
 
 
-/* SHIPPING */
-.cpcm_term-conditions{
+/* SHIPPING RETURN CONTACT */
+.cpcm_term-conditions-container{
     grid-column: span 3;
 }
 
-.cpcm_term-conditions h1 {
+.cpcm_content-terms_conditions h1{
     color: #1b1b1b;
     font-size: 24px;
     letter-spacing: 0.4px;
@@ -257,8 +256,7 @@ li::marker {
     text-transform: capitalize;
 }
 
-
-.cpcm_term-conditions p{
+.cpcm_content-terms_conditions p{
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 28px;
@@ -266,37 +264,14 @@ li::marker {
     text-align: justify;
 }
 
-.icons-block-payment{
-    display: flex;
-    justify-content:center;
-    position: relative;
-    margin-top: 25px;
-}
-
-.icon-payment{
-    display: flex;
-    position: relative;
-    width: 90px;
-    height: 40px;
-    align-items: center;
-    justify-content: flex-end;
-    filter: drop-shadow(4.0px 8.0px 8.0px hsla(0, 0%, 27%, 0.38));
-}
-
-.icon-payment img{
-    position: relative;
-    max-width: 80%;
-    max-height: auto;
-}
-
-.button-contactInfo{
+.cpcm_button-contactInfo{
     display: block;
     position: relative;
-    height: 55px;
+    height: 52px;
     width: auto;
     background-color: #0a74f6;
 
-    border-radius: 5px;
+    border-radius: 11px;
     color: #ffffff;
 
     font-size: 12px;
@@ -308,35 +283,35 @@ li::marker {
     margin-top: 50px;
 }
 
-.button-contactInfo:hover{
+.cpcm_button-contactInfo:hover{
     border: solid 2px #0a74f6;
     background-color: #ffffff;
     color: #0a74f6;
 }
 
 /* FOOTER */
-.cpcm_contact {
+.cpcm_contacts-container {
     grid-column: span 3;    
-    background-color:black;
+    background-color:#000;
 }
 
-.content-contact {
+.cpcm_content-contacts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
-    padding: 4% 0;
+    padding: 4%;
 }
 
-.content-contact h1 {
-    font-size: 20px;
+.cpcm_content-contacts h1 {
+    font-size: 21px;
     letter-spacing: 0px;
     color: #ffffff;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.content-contact p {
+.cpcm_content-contacts p {
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 24px;
@@ -346,7 +321,16 @@ li::marker {
 }
 
 
-/* responsive */
+/* RESPONSIVE *
+/
+
+/* lg */
+@media screen and (max-width: 1024px) {
+    .cpcm_part-image > img {
+        aspect-ratio: 4 / 4;
+    }
+}
+
 @media screen and (max-width: 980px) {
     .cpcm_part-image {
         grid-column: 1/4;
@@ -354,18 +338,61 @@ li::marker {
 
     .part-description {    
         grid-column: 1/4;
-        padding-top: 50px;
+        padding-top: 40px;
+        width: 60%;
     }
+
+    .cpcm_content-contacts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        padding: 4%;
+    }
+
+    .cpcm_bussinessname-content{
+        grid-row: span 2;  
+    }
+
+    .cpcm_bussinesslocation-content{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .cpcm_businesshours-content{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+}
+
+/* md */
+@media screen and (max-width: 768px) {
+
 
 }
 
-@media screen and (max-width: 760px) {
-    .cpcm_part-image {
+/* sm */
+@media screen and (max-width: 640px) {
+
+
+}
+
+/* xs */
+@media screen and (max-width: 475px) {
+
+    .cpcm_grid-container {
+
         display: block;
+
     }
 
-    .part-description {    
-        display: block;
+    header
+    {
+        width: 130%;
     }
 
+    .cpcm_banner{
+        object-fit: cover;
+    }
 }
