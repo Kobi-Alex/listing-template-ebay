@@ -107,21 +107,22 @@ nav li a:hover {
 main {
     grid-column: span 3;
     display: grid;
-    grid-template-columns: 1fr 1fr 1.51fr;
+    grid-template-columns: 1fr 1fr 1.5fr;
     align-items: center;
     justify-items: center;
-    gap: 30px 52px;
+    gap: 30px 58px;
 
     margin: 50px;
 }
 
 .cpcm_part-image {
     grid-column: 1/3;
+    max-width: 620px;
 }
 
 .cpcm_part-image > img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
   /* aspect-ratio: 4 / 3; */
 }
@@ -131,7 +132,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 520px;
+    height: auto;
 }
 
 .cpcm_part-description-header h1 {
@@ -148,6 +149,7 @@ main {
     line-height: 24px;
     font-weight: 400;
     text-align: justify;
+    margin-bottom: 24px;
 }
 
 .cpcm_part-description-content {
@@ -169,16 +171,22 @@ main {
     text-transform: capitalize;
 }
 
-.cpcm_description-barcode{
-    margin-top: 20px;
-}
-
 .cpcm_ean-partStock-barcode {
     font-family: 'Libre Barcode 39 Extended Text';
     font-size: 43px;
     color: #494949;
     align-self: center;
+    line-height: 1.2;
 }
+
+.part-description-footer{
+    display: block;
+    width: 100%;
+    grid-column: 3/4;
+    margin-top: 10px;
+
+}
+
 
 .cpcm_eBay-button-partsByVehicleStock{
     display: block;
@@ -321,14 +329,11 @@ li::marker {
 }
 
 
-/* RESPONSIVE *
-/
+/* RESPONSIVE */
 
 /* lg */
 @media screen and (max-width: 1024px) {
-    .cpcm_part-image > img {
-        aspect-ratio: 4 / 4;
-    }
+
 }
 
 @media screen and (max-width: 980px) {
@@ -336,17 +341,40 @@ li::marker {
         grid-column: 1/4;
     }
 
-    .part-description {    
+    .cpcm_part-description {    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         grid-column: 1/4;
+        gap: 40px;
+        height: auto;
+
         padding-top: 40px;
-        width: 60%;
+    }
+
+    .cpcm_part-description-content {
+        gap: 20px 30px;
+    }
+
+    .part-description-footer{
+        grid-column: 1/4;
+    }  
+}
+
+/* md */
+@media screen and (max-width: 768px) {
+
+    .cpcm_part-description {    
+        display: block;
+        justify-content:center;
+    }
+    
+    .cpcm_part-description-content {
+        gap: 10px 50px;
     }
 
     .cpcm_content-contacts {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        justify-items: center;
         padding: 4%;
     }
 
@@ -358,41 +386,47 @@ li::marker {
         grid-column: 2/3;
         grid-row: 1/2;
     }
-
+    
     .cpcm_businesshours-content{
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    
-}
-
-/* md */
-@media screen and (max-width: 768px) {
-
-
 }
 
 /* sm */
 @media screen and (max-width: 640px) {
 
+    .cpcm_content-contacts { 
+        display: block;
+    }
 
+    .cpcm_bussinessname-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cpcm_businesshours-content{
+        margin-top: 20px;
+    }
 }
 
 /* xs */
 @media screen and (max-width: 475px) {
 
     .cpcm_grid-container {
-
         display: block;
-
     }
 
-    header
-    {
+    header{
         width: 130%;
     }
 
-    .cpcm_banner{
-        object-fit: cover;
+    main {
+        width: 110%;
+    }
+
+    .cpcm_contacts-container { 
+        width: 130%;
     }
 }
