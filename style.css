@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
     margin: 0;
@@ -308,6 +307,7 @@ li::marker {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
+
     padding: 4%;
 }
 
@@ -316,7 +316,7 @@ li::marker {
     letter-spacing: 0px;
     color: #ffffff;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 
 .cpcm_content-contacts p {
@@ -328,14 +328,8 @@ li::marker {
     font-family: "Nunito Sans";
 }
 
-
 /* RESPONSIVE */
-
 /* lg */
-@media screen and (max-width: 1024px) {
-
-}
-
 @media screen and (max-width: 980px) {
     .cpcm_part-image {
         grid-column: 1/4;
@@ -396,8 +390,13 @@ li::marker {
 /* sm */
 @media screen and (max-width: 640px) {
 
+
     .cpcm_content-contacts { 
         display: block;
+    }
+
+    nav{
+        display: none;
     }
 
     .cpcm_bussinessname-content{
@@ -418,6 +417,11 @@ li::marker {
         display: block;
     }
 
+    nav{
+        display: none;
+    }
+
+    
     header{
         width: 130%;
     }
