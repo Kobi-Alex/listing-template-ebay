@@ -413,7 +413,7 @@ li::marker {
 /* xs */
 @media screen and (max-width: 475px) {
 
-    /*.cpcm_grid-container {
+    .cpcm_grid-container {
         display: block;
     }
 
@@ -422,7 +422,7 @@ li::marker {
     }
     
     header{
-        width: 130%;
+        width: 120%;
     }
 
     main {
@@ -430,7 +430,7 @@ li::marker {
     }
 
     .cpcm_contacts-container { 
-        width: 130%;
-    }*/
+        width: 120%;
+    }
  
 }
