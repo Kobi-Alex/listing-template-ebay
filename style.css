@@ -423,7 +423,7 @@ li::marker {
 
     
     header{
-        width: 130%;
+        width: 120%;
     }
 
     main {
@@ -431,6 +431,19 @@ li::marker {
     }
 
     .cpcm_contacts-container { 
-        width: 130%;
+        width: 120%;
     }
+
+    .cpcm_bussinessname-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cpcm_businesshours-content{
+        margin-top: 20px;
+    }
+
+
+    
 }
