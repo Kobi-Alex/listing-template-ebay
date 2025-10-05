@@ -44,7 +44,7 @@ hr {
 .cpcm_grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0px auto;
 }
 
@@ -146,7 +146,7 @@ main {
     letter-spacing: 0px;
     line-height: 24px;
     /* font-weight: 400; */
-    font-weight: 500;
+    font-weight: 400;
     text-align: justify;
     margin-bottom: 24px;
 }
@@ -161,7 +161,7 @@ main {
     line-height: 1.5;
     font-size: 11px;
     /* font-weight: 400; */
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -184,14 +184,12 @@ main {
     width: 100%;
     grid-column: 3/4;
     margin-top: 10px;
-
 }
-
 
 .cpcm_eBay-button-partsByVehicleStock{
     display: block;
     position: relative;
-    height: 46px;
+    height: 52px;
     width: 100%;
     /* background-color: #0aa7f6; */
     background-color: #0a74f6;
@@ -202,7 +200,7 @@ main {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
-    line-height: 46px;
+    line-height: 52px;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
@@ -237,8 +235,7 @@ main {
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 24px;
-    /* font-weight: 400; */
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .cpcm_part-fitment-content li{
@@ -269,8 +266,7 @@ li::marker {
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 28px;
-    /* font-weight: 400; */
-    font-weight: 500;
+    font-weight: 400;
     text-align: justify;
 }
 
@@ -315,7 +311,7 @@ li::marker {
 }
 
 .cpcm_content-contacts h1 {
-    font-size: 21px;
+    font-size: 20px;
     letter-spacing: 0px;
     color: #ffffff;
     font-weight: 500;
@@ -376,11 +372,11 @@ li::marker {
         padding: 4%;
     }
 
-    .cpcm_bussinessname-content{
+    .cpcm_businessname-content{
         grid-row: span 2;  
     }
 
-    .cpcm_bussinesslocation-content{
+    .cpcm_businesslocation-content{
         grid-column: 2/3;
         grid-row: 1/2;
     }
@@ -393,26 +389,25 @@ li::marker {
 
 /* sm */
 @media screen and (max-width: 640px) {
-
-    .cpcm_content-contacts { 
-        display: block;
-        width: 100%;
-    }
-
+  
     nav{
         display: none;
     }
-
-    .cpcm_bussinessname-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    
+    .cpcm_content-contacts { 
+        display: block;
     }
 
-    .cpcm_businesshours-content{  
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .cpcm_businessname-content{
+        justify-items: center;
+    }
+
+    .cpcm_businesslocation-content{
+        justify-items: center;
+    }
+
+    .cpcm_businesshours-content{ 
+        justify-items: center; 
         margin-top: 10px;
     }
 }
@@ -431,6 +426,4 @@ li::marker {
     main{
         margin: 20px;
     }
-
-
 }
