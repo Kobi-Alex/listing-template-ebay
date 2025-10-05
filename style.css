@@ -145,8 +145,7 @@ main {
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 24px;
-    /* font-weight: 400; */
-    font-weight: 400;
+    font-weight: 500;
     text-align: justify;
     margin-bottom: 24px;
 }
@@ -160,8 +159,7 @@ main {
 .cpcm_part-description-content p {
     line-height: 1.5;
     font-size: 11px;
-    /* font-weight: 400; */
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -235,7 +233,7 @@ main {
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .cpcm_part-fitment-content li{
@@ -266,7 +264,7 @@ li::marker {
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 28px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: justify;
 }
 
@@ -323,7 +321,6 @@ li::marker {
     letter-spacing: 0px;
     line-height: 24px;
     color: #bcbcbc;
-    /* font-weight: 400; */
     font-weight: 500;
     font-family: "Nunito Sans";
 }
@@ -395,19 +392,15 @@ li::marker {
     }
     
     .cpcm_content-contacts { 
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
-
+    
     .cpcm_businessname-content{
-        justify-items: center;
-    }
-
-    .cpcm_businesslocation-content{
-        justify-items: center;
+        text-align: center;
     }
 
     .cpcm_businesshours-content{ 
-        justify-items: center; 
         margin-top: 10px;
     }
 }
