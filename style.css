@@ -394,6 +394,7 @@ li::marker {
     .cpcm_content-contacts { 
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
     
     .cpcm_businessname-content{
