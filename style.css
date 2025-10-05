@@ -122,7 +122,7 @@ main {
   width: 100%;
   height: auto;
   object-fit: contain;
-  /* aspect-ratio: 4 / 3; */
+  border-radius: 8px;
 }
 
 .cpcm_part-description {    
