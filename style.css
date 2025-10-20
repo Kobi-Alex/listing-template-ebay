@@ -62,7 +62,7 @@ hr {
 
 /* NAVBAR */
 nav {
-    height: 72px;
+    height:100px;
     grid-column: span 3;
     display: grid;
     grid-template-columns: repeat(2, 1fr);;
@@ -72,6 +72,11 @@ nav {
 
 .cpcm_company-logo {
     background: transparent;
+}
+
+.cpcm_company-logo > img {
+    width: 16em;
+    object-fit: contain;
 }
 
 .cpcm_menu {
@@ -90,16 +95,16 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
-    color: rgb(25, 25, 25);
+    color: #000;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 nav li a:hover {        
     /* color: #0374ff; */
-    color: #0a74f6;;
+    color: #0a74f6;
 }
 
 main {
@@ -115,14 +120,14 @@ main {
 
 .cpcm_part-image {
     grid-column: 1/3;
-    max-width: 620px;
     border-radius: 10px;
+    max-width: 720px;
 }
 
 .cpcm_part-image > img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .cpcm_part-description {    
@@ -232,7 +237,7 @@ main {
 .cpcm_part-fitment-content > ul {
     font-size: 14px;
     letter-spacing: 0px;
-    line-height: 24px;
+    line-height: 26px;
     font-weight: 500;
 }
 
@@ -309,15 +314,15 @@ li::marker {
 }
 
 .cpcm_content-contacts h1 {
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 0px;
     color: #ffffff;
     font-weight: 500;
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
 }
 
 .cpcm_content-contacts p {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0px;
     line-height: 24px;
     color: #bcbcbc;
@@ -328,6 +333,11 @@ li::marker {
 /* RESPONSIVE */
 /* lg */
 @media screen and (max-width: 980px) {
+    
+    .cpcm_company-logo > img {
+        width: 14em;
+    }
+    
     .cpcm_part-image {
         grid-column: 1/4;
     }
@@ -354,6 +364,14 @@ li::marker {
 /* md */
 @media screen and (max-width: 768px) {
 
+    .cpcm_company-logo > img {
+        width: 13em;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+    
     .cpcm_part-description {    
         display: block;
         justify-content:center;
