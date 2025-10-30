@@ -75,7 +75,7 @@ nav {
 }
 
 .cpcm_company-logo > img {
-    width: 16em;
+    width: 5em;
     object-fit: contain;
 }
 
@@ -202,7 +202,7 @@ main {
     border-radius: 8px;
     color: #ffffff;
 
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 52px;
@@ -278,17 +278,17 @@ li::marker {
 .cpcm_button-contactInfo{
     display: block;
     position: relative;
-    height: 52px;
+    height: 60px;
     width: auto;
     background-color: #0a74f6;
 
     border-radius: 11px;
     color: #ffffff;
 
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     letter-spacing: 1px;
-    line-height: 55px;
+    line-height: 60px;
     text-decoration: none;
     text-align: center;
     margin-top: 50px;
