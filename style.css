@@ -9,9 +9,7 @@
 }
 
 .cpcm_body{
-    /* margin: 20px; */
     font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Outfit', sans-serif; */
     background: #ffffff;
 }
 
@@ -75,7 +73,7 @@ nav {
 }
 
 .cpcm_company-logo > img {
-    width: 5em;
+    width: 4.7em;
     object-fit: contain;
 }
 
@@ -103,7 +101,6 @@ nav ul li a {
 }
 
 nav li a:hover {        
-    /* color: #0374ff; */
     color: #0a74f6;
 }
 
@@ -122,7 +119,6 @@ main {
     grid-column: 1/3;
     max-width: 720px;
     overflow: hidden;
-
 }
 
 .cpcm_part-image > img {
@@ -278,7 +274,7 @@ li::marker {
 .cpcm_button-contactInfo{
     display: block;
     position: relative;
-    height: 60px;
+    height: 55px;
     width: auto;
     background-color: #0a74f6;
 
@@ -288,7 +284,7 @@ li::marker {
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 1px;
-    line-height: 60px;
+    line-height: 55px;
     text-decoration: none;
     text-align: center;
     margin-top: 50px;
@@ -337,7 +333,7 @@ li::marker {
 @media screen and (max-width: 980px) {
     
     .cpcm_company-logo > img {
-        width: 14em;
+        width: 4.2em;
     }
     
     .cpcm_part-image {
@@ -367,7 +363,7 @@ li::marker {
 @media screen and (max-width: 768px) {
 
     .cpcm_company-logo > img {
-        width: 13em;
+        width: 3.8em;
     }
 
     nav ul li a {
