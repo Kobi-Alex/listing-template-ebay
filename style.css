@@ -239,14 +239,14 @@ main {
     font-weight: 500;
 }
 
-.cpcm_part-fitment-content li{
+/* .cpcm_part-fitment-content li{
     list-style: inside;
     list-style-type:disc;
 }
 
 li::marker {
   color: #0a74f6;
-}
+}  */
 
 
 /* SHIPPING RETURN CONTACT */
